@@ -46,8 +46,7 @@ programa{
         escreva("\nSalário Final => R$",  mat.arredondar(salarioFinal,2))
 
         // ● Quanto o salário final representa em relação ao salário base (em %)
-        difSalarioBase = salarioFinal-salarioBase
-        escreva("\nDiferença entre salário base e salário final => R$",  mat.arredondar(difSalarioBase,2))
-
+        difSalarioBase = (salarioFinal-salarioBase)*100/salarioBase
+        escreva("\nDiferença entre salário base e salário final (%) => ",  mat.arredondar(difSalarioBase,2),"%")
     }
 }
